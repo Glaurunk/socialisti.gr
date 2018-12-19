@@ -1,0 +1,40 @@
+
+// Fonts
+//@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+
+body {
+  background-color: $light-grey;
+}
+
+nav {
+  background-color: $grey;
+}
+
+nav ul li a {
+  font-size: 1.2em;
+}
+
+footer {
+  background-color: $grey;
+}
+
+a {
+  color: $green;
+}
+
+a:hover {
+  color: darken($green, 20%);
+}
+
+.overflow{
+  height: 500px;
+  overflow: auto;
+}
