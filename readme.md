@@ -5,4 +5,4 @@
 <p>Moving on to bigger things, check my other works as well and feel free if you ever bother to point out my mistakes or bad practices; I'd be happy to learn something new :)</p>
 
 <p>Best regards to all.<p>
-<p><em>Stathis Andreou @ <a href="https://deepseacoding.com>"deepseacoding.com</a></em></p>
+<p><em>Stathis Andreou @ <a href="https://deepseacoding.com">deepseacoding.com</a></em></p>
