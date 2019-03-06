@@ -11,6 +11,10 @@
 
 
 body {
+
+  background-image: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)),url(/images/marx.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: $light-grey;
 }
 
@@ -35,6 +39,30 @@ a:hover {
 }
 
 .overflow{
-  height: 500px;
   overflow: auto;
+  height: 500px;
+
+}
+
+.container {
+  min-height: 1000px;
+}
+
+.page-link {
+   color: $green;
+}
+
+a:hover.page-link {
+  color: darken($green, 20%);
+}
+
+.page-item.active .page-link {
+  z-index: 1;
+    color: white;
+    background-color: $green;
+    border-color: $green;
+}
+
+.hyphen {
+  hyphens: auto;
 }

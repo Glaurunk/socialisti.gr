@@ -10467,6 +10467,10 @@ a.text-dark:focus {
 }
 
 body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), url(/images/marx.png);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(/images/marx.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #eeeeee;
 }
 
@@ -10491,7 +10495,32 @@ a:hover {
 }
 
 .overflow {
-  height: 500px;
   overflow: auto;
+  height: 500px;
+}
+
+.container {
+  min-height: 1000px;
+}
+
+.page-link {
+  color: #38c172;
+}
+
+a:hover.page-link {
+  color: #217243;
+}
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: white;
+  background-color: #38c172;
+  border-color: #38c172;
+}
+
+.hyphen {
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 

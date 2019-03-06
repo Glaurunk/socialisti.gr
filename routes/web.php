@@ -10,15 +10,19 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', 'PagesController@home');
+Route::get('/contact', 'PagesController@contact');
 
-Route::get('/', function () {
-    return view('home')->with(['title' => 'Αρχική Σελίδα']);
-});
+Route::resource('articles', 'ArticlesController');
+// Actions Handled By Resource Controller
+//
+// Verb	      URI	                      Action	Route Name
+// GET	      /articles	                index	  articles.index
+// GET	      /articles/create	        create	articles.create
+// POST	      /articles	                store	  articles.store
+// GET	      /articles/{article}	      show	  articles.show
+// GET	      /articles/{article}/edit	edit	  articles.edit
+// PUT/PATCH	/articles/{article}	      update	articles.update
+// DELETE	    /articles/{article}	      destroy	articles.destroy
 
-Route::get('/contact', function () {
-    return view('contact')->with(['title' => 'Επικοινωνία']);
-});
-
-Route::get('/articles', function () {
-    return view('articles.index')->with(['title' => 'Αρχείο Κειμένων']);
-});
+Auth::routes();
